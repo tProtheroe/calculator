@@ -1,21 +1,39 @@
+* {
+    border-radius: 1rem;
+}
+
 body {
     background-color: aliceblue;
     height: 100vh;
 }
 
+button {
+    align-items: center;
+    background-color: dimgrey;
+    color: white;
+    display: flex;
+    font-size: 1.5rem;
+    height: 4rem;
+    justify-content: center;
+    margin: 0.2rem;
+    width: 4rem;
+}
+
+button:active {
+    filter: brightness(135%);
+}
 
 #calculator {
-    border: 0.1rem solid black;
-    background-color: rgb(224, 224, 224);
-    width: 22rem;
-    height: 23.5rem;
+    background-color: black;
+    width: 19rem;
 }
 
 .buttons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0.3rem;
+    height: 85%;
+    justify-content: space-around;
+    padding: 0 0.3rem 0.3rem;
 }
 
 .container {
@@ -25,35 +43,44 @@ body {
     height: 60vh;
 }
 
+.disp-num{
+    display: flex;
+    font-size: 1rem;
+    height: 50%;
+    justify-content: flex-end;
+    padding-right: 0.5rem;
+}
+
+.current-number{
+    font-size: 2rem;
+}
+
+.previous-number{
+    font-size: 1.5rem;
+}
+
 .display {
     border: 0.1rem solid black;
     background-color: white;
     display: flex;
+    flex-direction: column;
     font-size: 2rem;
-    height: 2.5rem;
-    justify-content: flex-end;
-    letter-spacing: -3px;
-    margin: 1rem;
+    height: 4.5rem;
+    margin: 0.7rem;
     overflow: hidden;
     padding: 0.3rem;
     white-space: nowrap;
-    width: 19rem;
 }
 
-.equals {
-    margin-left: auto !important;
-}
-
-.number {
-    align-items: center;
-    background-color: white;
-    border: 0.1rem solid black;
+.function-keys{
     display: flex;
-    font-size: 1.5rem;
-    height: 4rem;
-    justify-content: center;
-    margin: 0.2rem;
-    width: 4rem;
+    justify-content: space-around;
+}
+
+.function-keys button {
+    font-size: 1.3rem;
+    height: 2.5rem;
+    width: 40%;
 }
 
 .numbers{
@@ -63,15 +90,7 @@ body {
 }
 
 .operator {
-    align-items: center;
-    background-color: white;
-    border: 0.1rem solid black;
-    display: flex;
-    font-size: 1.5rem;
-    height: 4rem;
-    justify-content: center;
-    margin: 0.2rem;
-    width: 4rem;
+    background-color: darkorange;
 }
 
 .operators {
